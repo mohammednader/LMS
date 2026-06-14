@@ -33,7 +33,7 @@ public class AuthController : ControllerBase
             return BadRequest(new { message = "Username and password are required" });
 
         if (!_users.TryGetValue(request.Username.ToLower(), out var user) || user.Password != request.Password)
-            return Unauthorized(new { message = "Invalid credentials. Check the credentials in README." });
+            return Unauthorized(new { message = "Invalid credentials. Check the credentials in README file." });
 
         var claims = new List<Claim>
         {
