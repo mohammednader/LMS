@@ -9,7 +9,7 @@ jobs:
       if [-f "config.yml"]; then
         echo "::debug::config.yml exist"
       else
-       echo "::error:: config.yml not exist"
+        echo "::error:: config.yml not exist"
       
     
    
