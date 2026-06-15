@@ -4,11 +4,11 @@ jobs:
  example:
   runs-on: ubuntu-latest
   steps:
-  - name: check if file exist
-    run: |
-      if [-f "config.yml"]; then
+    - name: check if file exist
+      run: |
+       if [-f "config.yml"]; then
         echo "::debug::config.yml exist"
-      else
+       else
         echo "::error:: config.yml not exist"
       
     
